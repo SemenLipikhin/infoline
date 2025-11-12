@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Инфолайн</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -13,36 +15,55 @@
         <!-- Шапка страницы -->
         <header class="header">
             <div class="container">
-                <!-- Создали блок меню т.к на мобильном устройстве весь этот блок будет в плоноэкранным меню -->
+                <!-- Создали блок menu так как на мобильнике весь этот блок бюдет полноэкранным меню -->
                 <div class="menu">
                     <!-- Логотип всегда делаем ссылкой -->
                     <a href="#" class="logo">
-                        <!-- Логотип добавляем изображением, т.к если не подключаться фирменные шрифты, то теряется смысл логотипа -->
-                        <img src="/images/icons/logo-infoline.svg" alt="">
+                        <!-- Логотип добавляем изображением, так как если не подключаться фирменные шрифты то теряется смысл логотипа -->
+                        <img src="images/icons/logo-infoline.svg" alt="">
                     </a>
-                    <nav class="nav">
+                    <nav class="nav header__nav">
                         <ul class="nav__list">
                             <li class="nav__item">
-                                <a href="" class="nav_link">Главная</a>
+                                <a href="" class="nav__link">Главная</a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav_link">Аренда</a>
+                                <a href="" class="nav__link">Аренда</a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav_link">Услуги</a>
+                                <a href="" class="nav__link">Услуги</a>
                             </li>
                             <li class="nav__item">
-                                <a href="" class="nav_link">Контакты</a>
+                                <a href="" class="nav__link">Контакты</a>
                             </li>
                         </ul>
                     </nav>
+                    <a href="tel:+73452388000" class="phone"><span>8 (3452)</span>388-000</a>
                 </div>
             </div>
         </header>
+        <!-- Hero/main - главная секция сайта -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <div class="addres">ул. республики, 61</div>
+                    <h1 class="title">
+                        <span>Бизнес-центр</span>
+                        <span>в тюмени</span>
+                    </h1>
+                    <div class="hero__btns">
+                        <button class="btn btn--blue btn--large">Заказать звонок</button>
+                        <a href="#" class="btn btn--outline btn--small">Аренда площади</a>
+                    </div>
+                </div>
+                <div class="hero__img-wrap">
+                    <img src="./images/bg/building.png" alt="Многоэтажное здание" class="hero_img" width="420"
+                        height="550">
+                </div>
+            </div>
+        </section>
+        <!-- /Hero -->
     </div>
-
 </body>
 
-
 </html>
-
